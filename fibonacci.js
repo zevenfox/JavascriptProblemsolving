@@ -8,7 +8,7 @@ function fibonacci(number){
         for(i = 2; i < number ; i++){
             lst.push(lst[i-1] + lst[i-2])
         }
-        console.log(lst)
+        console.log(lst[number-1])
     }
     else{
         alert("Input must be positive")
@@ -16,15 +16,26 @@ function fibonacci(number){
 }
 fibonacci(number)
 
+// easy way
+function fibonacci(number){
+    let lst = [0,1]
+    for (i=2;i<number;i++){
+        lst.push(lst[i-1]+lst[i-2])
+    }
+    return lst[number-1]
+}
+console.log(fibonacci(10))
+
+
 
 //or 
-function fibonacci(num) {
-    if (num <= 0) {
-        return 0;
-    } else if (num <= 2) {
-        return 1;
-    } else {
-        return fibonacci(num - 1) + fibonacci(num - 2);
-    }
-}
-console.log(fibonacci(7));
+// function fibonacci(num) {
+//     if (num <= 0) {
+//         return 0;
+//     } else if (num <= 2) {
+//         return 1;
+//     } else {
+//         return fibonacci(num - 1) + fibonacci(num - 2);
+//     }
+// }
+// console.log(fibonacci(7));
