@@ -1,4 +1,4 @@
-var namePaying = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+var namePaying = ["Angela", "Ben", "Jenny", "Michael", "Chlo, Chola"]
 function getRandomName() {
     return namePaying[Math.floor(Math.random() * namePaying.length)]
 }
